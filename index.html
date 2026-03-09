@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랜덤 숫자 뽑기</title>
+    <title>1 ~ 100 랜덤 숫자 뽑기 - 고품질 번호 생성기</title>
+    <meta name="description" content="1부터 100까지의 숫자를 중복 없이 랜덤으로 하나씩 뽑아주는 도구입니다. 경품 추첨, 게임, 교육용 등 다양한 용도로 사용하세요.">
+    <meta name="keywords" content="랜덤숫자, 번호뽑기, 추첨기, 1-100 랜덤, 번호생성기">
     <link rel="stylesheet" href="style.css">
     <meta name="google-adsense-account" content="ca-pub-2725549586732977">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2725549586732977"
@@ -11,48 +13,68 @@
 </head>
 <body>
     <div class="container">
-        <button id="theme-toggle" class="theme-btn">다크 모드</button>
-        <h1>1 ~ 100 랜덤 숫자 뽑기</h1>
-        <div id="number-display" class="number">-</div>
-        <button id="pick-btn" class="main-btn">숫자 뽑기</button>
-        <button id="reset-btn" class="sub-btn">초기화</button>
-        <div id="history" class="history-list">
-            <h3>뽑은 숫자 목록</h3>
-            <ul id="numbers-ul"></ul>
-        </div>
+        <header>
+            <button id="theme-toggle" class="theme-btn">다크 모드</button>
+            <h1>1 ~ 100 랜덤 숫자 뽑기</h1>
+            <p class="subtitle">공정하고 투명한 번호 추첨 시스템</p>
+        </header>
 
-        <div class="contact-section">
-            <h3>제휴 문의</h3>
+        <main>
+            <div id="number-display" class="number">-</div>
+            <div class="controls">
+                <button id="pick-btn" class="main-btn">숫자 뽑기</button>
+                <button id="reset-btn" class="sub-btn">초기화</button>
+            </div>
+
+            <section id="history" class="history-list">
+                <h3>뽑은 숫자 목록</h3>
+                <ul id="numbers-ul"></ul>
+            </section>
+
+            <section class="info-section">
+                <h2>이 도구의 특징</h2>
+                <ul>
+                    <li><strong>중복 없는 추출:</strong> 1부터 100까지의 숫자를 한 번씩만 뽑아줍니다.</li>
+                    <li><strong>투명성:</strong> 뽑은 숫자의 기록이 하단에 실시간으로 저장됩니다.</li>
+                    <li><strong>사용 편의성:</strong> 클릭 한 번으로 간편하게 번호를 생성할 수 있습니다.</li>
+                </ul>
+
+                <h2>활용 방법</h2>
+                <p>학교 수업에서의 발표 순서 정하기, 이벤트 경품 추첨, 또는 간단한 게임에서 번호를 정할 때 유용하게 사용할 수 있습니다. 모든 숫자를 다 뽑으면 시스템이 자동으로 알려줍니다.</p>
+            </section>
+        </main>
+
+        <section class="contact-section">
+            <h3>제휴 및 서비스 문의</h3>
+            <p>본 서비스에 대한 제휴 제안이나 기술 문의는 아래 양식을 통해 보내주세요.</p>
             <form action="https://formspree.io/f/xreyeoqd" method="POST" class="contact-form">
                 <input type="text" name="name" placeholder="성함/업체명" required>
                 <input type="email" name="_replyto" placeholder="이메일 주소" required>
-                <textarea name="message" placeholder="문의 내용을 입력해주세요" required></textarea>
+                <textarea name="message" placeholder="문의 내용을 상세히 입력해주세요" required></textarea>
                 <button type="submit" class="main-btn">문의 보내기</button>
             </form>
-        </div>
+        </section>
 
-        <div id="disqus_section" style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
-            <h3>댓글</h3>
+        <section id="disqus_section">
+            <h3>사용자 피드백</h3>
             <div id="disqus_thread"></div>
             <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
+                (function() {
                 var d = document, s = d.createElement('script');
                 s.src = 'https://productbuilder-kysabatj51.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html">개인정보처리방침</a>
+                <a href="#info-section">이용 방법</a>
+            </div>
+            <p>&copy; 2026 랜덤 숫자 생성기. All rights reserved.</p>
+        </footer>
     </div>
     <script src="main.js"></script>
 </body>
