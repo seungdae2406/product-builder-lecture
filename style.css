@@ -101,3 +101,30 @@ li {
     border-radius: 4px;
     font-size: 0.9rem;
 }
+
+.contact-section {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
