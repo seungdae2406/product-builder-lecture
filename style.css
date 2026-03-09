@@ -1,1 +1,103 @@
-/* Add styles here */
+:root {
+    --bg-color: #f0f2f5;
+    --container-bg: #ffffff;
+    --text-color: #333333;
+    --btn-primary: #007bff;
+    --btn-secondary: #6c757d;
+    --btn-text: #ffffff;
+    --border-color: #dddddd;
+}
+
+[data-theme='dark'] {
+    --bg-color: #1a1a1a;
+    --container-bg: #2d2d2d;
+    --text-color: #f0f0f0;
+    --btn-primary: #375a7f;
+    --btn-secondary: #444444;
+    --btn-text: #ffffff;
+    --border-color: #444444;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.number {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: var(--btn-primary);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: transform 0.1s, opacity 0.2s;
+    margin: 0.5rem;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.main-btn {
+    background-color: var(--btn-primary);
+    color: var(--btn-text);
+}
+
+.sub-btn {
+    background-color: var(--btn-secondary);
+    color: var(--btn-text);
+}
+
+.theme-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--btn-secondary);
+    color: var(--btn-text);
+}
+
+.history-list {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+li {
+    background-color: var(--btn-secondary);
+    color: var(--btn-text);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}

@@ -1,14 +1,23 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 숫자 뽑기</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="container">
+        <button id="theme-toggle" class="theme-btn">다크 모드</button>
+        <h1>1 ~ 100 랜덤 숫자 뽑기</h1>
+        <div id="number-display" class="number">-</div>
+        <button id="pick-btn" class="main-btn">숫자 뽑기</button>
+        <button id="reset-btn" class="sub-btn">초기화</button>
+        <div id="history" class="history-list">
+            <h3>뽑은 숫자 목록</h3>
+            <ul id="numbers-ul"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
